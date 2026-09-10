@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikita - Resume</title>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        background: #f4f4f4;
+        color: #222;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+    .resume {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 20px auto;
+        padding: 18mm 18mm 16mm;
+        background: white;
+        box-shadow: 0 0 12px rgba(0,0,0,.12);
+    }
+    header {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    h1 {
+        margin: 0;
+        font-size: 31px;
+        letter-spacing: .3px;
+    }
+    .role {
+        margin-top: 5px;
+        font-size: 20px;
+        font-style: italic;
+    }
+    .contact {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        font-size: 14px;
+    }
+    .section { margin-top: 22px; }
+    .section h2 {
+        font-size: 18px;
+        margin: 0 0 10px;
+        padding-bottom: 5px;
+        border-bottom: 1.5px solid #222;
+        letter-spacing: .3px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 1.45;
+        margin: 0;
+    }
+    .item { margin: 0 0 15px; }
+    .item-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 15.5px;
+        line-height: 1.35;
+    }
+    .item-head strong { font-weight: 700; }
+    .date { white-space: nowrap; }
+    ul {
+        margin: 5px 0 0 18px;
+        padding: 0;
+    }
+    li {
+        margin: 4px 0;
+        font-size: 15px;
+        line-height: 1.35;
+    }
+    .skills {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+    .tag {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    @media print {
+        body { background: white; }
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0;
+            box-shadow: none;
+        }
+    }
+    @media (max-width: 800px) {
+        .resume {
+            width: 100%;
+            min-height: auto;
+            margin: 0;
+            padding: 25px;
+        }
+        .item-head { flex-direction: column; gap: 2px; }
+        .date { white-space: normal; }
+    }
+</style>
+</head>
+
+<body>
+<div class="resume">
+
+<header>
+    <h1>Nikita</h1>
+    <div class="role">B.Tech CSE Student | Data Science &amp; Machine Learning</div>
+
+    <!-- Replace the placeholders below with your real contact details -->
+    <div class="contact">
+        <span>📍 India</span>
+        <span>✉️ your.email@example.com</span>
+        <span>📞 +91 XXXXX XXXXX</span>
+        <span>in LinkedIn / GitHub</span>
+    </div>
+</header>
+
+<section class="section">
+    <h2>SUMMARY</h2>
+    <p>
+        B.Tech Computer Science Engineering student with practical exposure to
+        Data Science and Machine Learning. Interested in Python programming,
+        data analysis, machine learning, web development and software projects.
+        Experienced in developing academic and internship projects and presenting
+        technical concepts in a clear and practical way.
+    </p>
+</section>
+
+<section class="section">
+    <h2>INTERNSHIP / TRAINING</h2>
+
+    <div class="item">
+        <div class="item-head">
+            <div><strong>Career Edge IT Institute</strong>, Data Science with Machine Learning Intern/Trainee</div>
+            <div class="date">Session 2026–27 | Jaipur, India</div>
+        </div>
+        <ul>
+            <li>Worked with Python, Data Science and Machine Learning concepts through practical training.</li>
+            <li>Performed data preprocessing, exploratory data analysis and feature selection.</li>
+            <li>Built and evaluated machine learning models including Logistic Regression, Decision Tree and Random Forest.</li>
+            <li>Developed a Customer Churn Prediction project using a machine learning workflow.</li>
+            <li>Used evaluation metrics such as accuracy, precision, recall, F1-score and ROC-AUC.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <h2>PROJECTS</h2>
+
+    <div class="item">
+        <div class="item-head">
+            <div><strong>Customer Churn Prediction</strong>, Machine Learning</div>
+        </div>
+        <ul>
+            <li>Created a machine learning workflow from customer data preprocessing to churn prediction.</li>
+            <li>Applied EDA, feature selection, model training and evaluation.</li>
+            <li>Compared Logistic Regression, Decision Tree and Random Forest models.</li>
+            <li>Built an interface for exploring data, viewing model information and predicting customer churn.</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <div class="item-head">
+            <div><strong>Land Record Management System – Bhoomi Project</strong></div>
+        </div>
+        <ul>
+            <li>Designed a system concept for managing and maintaining digital land-record information.</li>
+            <li>Worked on requirements, system documentation, diagrams and project presentation.</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <div class="item-head">
+            <div><strong>Digital Payment Processing System</strong></div>
+        </div>
+        <ul>
+            <li>Prepared an SRS and system methodology for a digital payment processing system inspired by modern payment platforms.</li>
+            <li>Included transaction processing and fraud-detection concepts in the system design.</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <div class="item-head">
+            <div><strong>LPG Leakage Detection System</strong>, IoT Project</div>
+        </div>
+        <ul>
+            <li>Worked on a gas-leakage detection prototype using an MQ-2 gas sensor and Arduino.</li>
+            <li>Designed an alert mechanism for detecting potentially unsafe gas leakage.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <h2>EDUCATION</h2>
+
+    <div class="item">
+        <div class="item-head">
+            <div><strong>Bachelor of Technology (B.Tech) – Computer Science Engineering</strong></div>
+            <div class="date">IV Semester</div>
+        </div>
+        <p>Currently pursuing</p>
+    </div>
+</section>
+
+<section class="section">
+    <h2>TECHNICAL SKILLS</h2>
+    <div class="skills">
+        <span class="tag">Python</span> |
+        <span class="tag">Machine Learning</span> |
+        <span class="tag">Data Science</span> |
+        <span class="tag">Pandas</span> |
+        <span class="tag">NumPy</span> |
+        <span class="tag">Scikit-learn</span> |
+        <span class="tag">Streamlit</span> |
+        <span class="tag">HTML</span> |
+        <span class="tag">CSS</span> |
+        <span class="tag">Java</span> |
+        <span class="tag">SQL</span> |
+        <span class="tag">DBMS</span> |
+        <span class="tag">GitHub</span> |
+        <span class="tag">VS Code</span>
+    </div>
+</section>
+
+<section class="section">
+    <h2>CORE AREAS</h2>
+    <div class="skills">
+        <span class="tag">Data Preprocessing</span> |
+        <span class="tag">EDA</span> |
+        <span class="tag">Feature Selection</span> |
+        <span class="tag">Model Training</span> |
+        <span class="tag">Model Evaluation</span> |
+        <span class="tag">Web Development</span> |
+        <span class="tag">Database Management</span>
+    </div>
+</section>
+
+<section class="section">
+    <h2>LANGUAGES</h2>
+    <p>English &nbsp; | &nbsp; Hindi</p>
+</section>
+
+</div>
+</body>
+</html>
